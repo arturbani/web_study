@@ -1,13 +1,15 @@
-/* Limpar formatações padrão*/
+/* Limpar formatações padrão */
 * {
     margin:0;
     padding: 0;
+
 } 
 
 body {
     font-size: 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background: #f3f3f3
+
 }
 
 
@@ -18,31 +20,37 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+
 }
 
 #area {
     width: 720px;
     margin: 0 auto;
+
 }
 
-#area-principal {
+#area-principal { 
     width: 720px;
     margin: 55px auto 10px auto;
+
 }
 
 #logo {
     float: left;
+
 }
 
 #menu {
     float: right;
     padding: 10px;
 
+
 }
 
 #postagem {
     background: white;
     padding: 10px;
+
 }
 
 /*Classes*/
@@ -65,6 +73,7 @@ body {
 .img-postagem {
     float: left;
     margin: 0px 10px 5px 0px;
+
 }
 
 .autor{
@@ -74,7 +83,7 @@ body {
     margin-top: 10px;
 }
 
-/**** MENU ****/
+/* menu */
 a {
     text-decoration: none;
     padding: 5px 10px;
@@ -83,19 +92,23 @@ a {
 /*Links não visitados*/
 a:link {
     color: #838383
+
 }
 
 /*Links visitados*/
 a:visited {
     color: #838383
+
 }
 
 /*Links hover*/
 a:hover{
     background: #b9c941;
-}
- /* Links active*/
-a:active {
-    color: #838383
+
 }
 
+/* Links active*/
+a:active {
+    color: #838383
+
+}
