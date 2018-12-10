@@ -42,6 +42,8 @@ $(document).ready(function (){
 
     $('.quadrado').click( function (){ 
         var id_quadrado = this.id;
+        // bugfix para não deixar clicar 2x
+        $('#'+id_quadrado).off();
         jogada(id_quadrado);
     
     });
