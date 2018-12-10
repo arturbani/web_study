@@ -145,7 +145,7 @@ function verificaJogo(){
     ganhador(pontos);
 
     pontos = 0;
-    pontos = matrizJogo['a'][0] + matrizJogo['b'][1] + matrizJogo['c'][2];
+    pontos = matrizJogo['a'][2] + matrizJogo['b'][1] + matrizJogo['c'][0];
     ganhador(pontos);
 
 }
