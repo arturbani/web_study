@@ -5,6 +5,8 @@
 
 		<title>Jogo da velha</title>
 		<script src="jquery-2.2.1.js"></script>
+		<script src="src/script.js"></script>
+
 	</head>
 
 	<body>
@@ -20,19 +22,19 @@
 							<td align="center">
 								<img src="img/jogador_1.png" />
 								<br />
-								<input type="text" maxlength="10" placeholder="Apelido jogador 1" style="border: 0px;" />
+								<input id="entrada-p1" type="text" maxlength="10" placeholder="Apelido jogador 1" style="border: 0px;" />
 							
 							</td>
 
 							<td align="center">
-								<img src="img/iniciar.png" />
+								<img id="btn-start" src="img/iniciar.png" />
 							
 							</td>
 
 							<td align="center">
 								<img src="img/jogador_2.png" />
 								<br />
-								<input type="text" maxlength="10" placeholder="Apelido jogador 2" style="border: 0px;" />
+								<input id="entrada-p2" type="text" maxlength="10" placeholder="Apelido jogador 2" style="border: 0px;" />
 							
 							</td>
 
@@ -47,53 +49,56 @@
 		</div>
 
 		<!-- Jogo da velha-->
-		<div id="tic-tac-toe" align="center">
+		<div id="tic-tac-toe" style="display: none; margin-top: 50px; text-align: center;" align="center">
 			<div style="display:inline-block;">
 				<img src="img/jogador_1.png" />
+				<br>
+				<span id="nome-p1"></span>
+				<br><br><br><br><br><br>
 			
 			</div>
 			
 			<div style="display:inline-block">
 				<table border="0">
 					<tr>
-						<td style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
+						<td class="quadrado" id="a-1" style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
+						<td class="quadrado" id="a-2" style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td style="border-bottom: solid 2px blue;">
+						<td class="quadrado" id="a-3" style="border-bottom: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 						
 					</tr>
 
 					<tr>
-						<td style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
+						<td class="quadrado" id="b-1" style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
+						<td class="quadrado" id="b-2" style="border-bottom: solid 2px blue; border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td style="border-bottom: solid 2px blue;">
+						<td class="quadrado" id="b-3" style="border-bottom: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 					</tr>
 
 					<tr>
-						<td style="border-right: solid 2px blue;">
+						<td class="quadrado" id="c-1" style="border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td style="border-right: solid 2px blue;">
+						<td class="quadrado" id="c-2" style="border-right: solid 2px blue;">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 
-						<td>
+						<td class="quadrado" id="c-3">
 							<div style="width:100px; height:100px;"></div>
 						</td>
 					</tr>
@@ -105,6 +110,10 @@
 
 			<div style="display:inline-block;">
 				<img src="img/jogador_2.png" />
+				<br>
+				<span id="nome-p2"></span>
+				<br><br><br><br><br><br>
+
 			
 			</div>
 
