@@ -4,10 +4,10 @@ class Calculator{
     private $number1;
     private $number2;
 
-    function _construct(){
+    function __construct($number1, $number2){
         $this->result = 0;
-        $this->number1 = 0;
-        $this->number2 = 0;
+        $this->number1 = $number1;
+        $this->number2 = $number2;
     
     }
 
@@ -38,7 +38,7 @@ class Calculator{
     
     }
     
-    public function setResult($number){
+    public function setNumber2($number){
         $this->number2 = $number;
     
     }
@@ -62,7 +62,7 @@ class Calculator{
     }
 
     
-    public function division(){
+    public function quotient(){
         $this->result = $this->number1 / $this->number2;
 
     }
